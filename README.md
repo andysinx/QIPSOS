@@ -7,7 +7,7 @@ This repository implements the Symbiotic Organisms Search (SOS) algorithm, a nat
 </p>
 
 <p align="center">
-  <img src="./QESOS_flowchart.png" width="800"/>
+  <img src="./QESOS_flowchart.png" width="400"/>
 </p>
 🔥 Vari
 
