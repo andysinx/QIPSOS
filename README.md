@@ -1,6 +1,6 @@
 ## Quantum-Enhanced Symbiotic Organisms Search (QE-SOS)
 
-This repository implements the Symbiotic Organisms Search (SOS) algorithm, a nature-inspired metaheuristic for continuous and combinatorial optimization. SOS is based on ecological interactions between organisms—**mutualism, commensalism, and parasitism**—which drive the iterative evolution of candidate solutions while balancing exploration and exploitation without requiring operators such as crossover or mutation.
+This repository implements the Symbiotic Organisms Search (SOS) algorithm, a nature-inspired metaheuristic for continuous and combinatorial optimization. SOS is based on ecological interactions between organisms—**mutualism, commensalism, and parasitism** which drive the iterative evolution of candidate solutions while balancing exploration and exploitation without requiring operators such as crossover or mutation.
 
 <p align="center">
   <img src="./Ecosystem_view.png" width="800"/>
