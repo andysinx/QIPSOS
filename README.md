@@ -17,7 +17,6 @@ In this work, we propose a **quantum-enhanced variant of SOS (QE-SOS)**, where p
 The proposed framework is evaluated on a diverse set of continuous optimization problems, including:
 
 - Unimodal and multimodal benchmark functions  
-- High-dimensional test landscapes  
 - The Cantilever Beam Problem (CBP)
 
 ## Key Idea
