@@ -5,10 +5,10 @@ This repository implements the Symbiotic Organisms Search (SOS) algorithm, a nat
 <table>
   <tr>
     <td align="center">
-      <img src="figures/Ecosystem_view.pdf" width="400"/>
+      <img src="Ecosystem_view.pdf" width="400"/>
     </td>
     <td align="center">
-      <img src="figures/QESOS_flowchart.pdf" width="400"/>
+      <img src="QESOS_flowchart.pdf" width="400"/>
     </td>
   </tr>
 </table>
