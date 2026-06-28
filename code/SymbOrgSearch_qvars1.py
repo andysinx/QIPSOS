@@ -115,8 +115,8 @@ class Hybrid_SOS1:
                 n_change = np.random.randint(1, self.dim + 1)
                 idx = np.random.choice(self.dim, n_change, replace=False)
 
-                # 🔥 CHIAVE: encoding dell'individuo, non random
-                theta = xi[idx] * np.pi  # normalizzazione nello spazio circuitale
+                # 🔥 CHIAVE: encoding of individual, not random
+                theta = xi[idx] * np.pi  
 
                 # quantum sampling
                 z = quantum_sample(theta)
@@ -124,7 +124,7 @@ class Hybrid_SOS1:
                 # decode perturbation (IMPORTANT: treat as noise, not absolute value)
                 perturb = decode_quantum(z, self.bounds[idx])
 
-                # applica come perturbazione attorno a xi (NON sostituzione diretta)
+                # Application of perturbation around of xi (Not directly substitution)
                 xq = xi.copy()
                 xq[idx] = xi[idx] + 0.1 * (perturb - 0.5 * (self.bounds[idx,1] + self.bounds[idx,0]))
 
@@ -185,8 +185,7 @@ def run_benchmark():
             all_histories.append(history)
             all_positions.append(position_history)
 
-             # salva trajectory singola seed
-            # salva trajectory singola seed
+            # save single trajectory seed
             np.save(
                 f"results1/{name}_run{r}_history1.npy",
                 np.array(history)
@@ -198,7 +197,7 @@ def run_benchmark():
             )
 
         # =========================
-        # CSV PER PAPER (per problema)
+        # CSV For PAPER (per problem)
         # =========================
         df = pd.DataFrame(results)
         df.to_csv(f"results1/{name}_quantumvar1_results.csv", index=False)
