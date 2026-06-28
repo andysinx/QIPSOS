@@ -3,7 +3,7 @@
 This repository provides an implementation of the **Quantum-Enhanced Symbiotic Organisms Search (QE-SOS)** algorithm, an extension of the classical **Symbiotic Organisms Search (SOS)** metaheuristic proposed in the paper:
 
 > **Enhancing Symbiotic Organisms Search via Quantum Sampling Perturbations**  
-> Authors: Giovanni Acampora, Saverio De Vito, Elena Esposito, Daniele Lizzio Bosco, Andrea Senese, Giuseppe Serra, and Autilia Vitiello.
+> Authors: Giovanni Acampora, Saverio De Vito, Elena Esposito, Daniele Lizzio Bosco, **Andrea Senese** (first author), Giuseppe Serra, and Autilia Vitiello.
 
 SOS is a nature-inspired optimization algorithm designed for both **continuous** and **combinatorial** optimization problems. It models the interactions among organisms within an ecosystem through three ecological relationships:
 
