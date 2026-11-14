@@ -41,7 +41,7 @@ The three interaction phases are implemented as follows:
 The resulting algorithm preserves the ecosystem-based optimization structure while replacing circuit-based sampling with lightweight analytical computations.
 
 <p align="center">
-  <img src="./QISOS_flowchart.png" width="400"/>
+  <img src="./QISOS_flowchart.jpg" width="400"/>
 </p>
 
 ## Benchmarking
