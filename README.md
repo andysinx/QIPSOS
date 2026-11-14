@@ -35,7 +35,7 @@ This formulation enables efficient classical sampling without quantum hardware, 
 The three interaction phases are implemented as follows:
 
 - **Classical Mutualism:** Retains the original SOS update mechanism, allowing two organisms to benefit from their interaction.
-- **Quantum-Inspired Commensalism:** Introduces sparse, signed perturbations based on independent Bernoulli samples, with \(P(s_d=+1)=0.25\), to modify a randomly selected subset of decision variables.
+- **Quantum-Inspired Commensalism:** Introduces sparse, signed perturbations based on independent Bernoulli samples, with $P(s_d=+1)=0.25$), to modify a randomly selected subset of decision variables.
 - **Quantum-Inspired Parasitism:** Employs position-dependent angle encoding and analytical probability sampling to generate signed perturbations for selected parasite coordinates.
 
 The resulting algorithm preserves the ecosystem-based optimization structure while replacing circuit-based sampling with lightweight analytical computations.
