@@ -1,0 +1,151 @@
+QIP-SOS | 26 benchmarks x 20 runs x 9 algorithms | NFE=2415
+Minimization: lower Best is better.
+Pairwise comparisons: 36; Mann-Whitney tests: 936
+
+GLOBAL TESTS
+          test  statistic      p_value  effect_size_Kendall_W
+      Friedman 145.250161 1.916447e-27               0.698318
+Iman-Davenport  57.868738 5.498951e-48               0.698318
+
+MEAN RANKS
+algorithm  mean_rank  wins_including_ties
+  QI-full   2.480769                   10
+QI-p_only   2.557692                    7
+   QE-SOS   3.019231                    4
+QI-c_only   4.269231                    1
+      SOS   4.326923                    1
+      PSO   5.115385                    5
+       GA   6.653846                    1
+       DE   8.000000                    0
+       MA   8.576923                    0
+
+WILCOXON ON BENCHMARK MEANS (Holm across 36 pairs)
+algorithm_a algorithm_b  statistic        p_raw  a_better  b_better  ties  median_difference   p_holm  significant_holm_0_05
+        PSO          MA        0.0 2.980232e-08        26         0     0      -1.083835e+02 0.000001                   True
+         DE         PSO        0.0 2.980232e-08         0        26     0       6.747074e+01 0.000001                   True
+  QI-c_only          MA        0.0 2.980232e-08        26         0     0      -1.092355e+02 0.000001                   True
+  QI-c_only          DE        0.0 2.980232e-08        26         0     0      -7.774988e+01 0.000001                   True
+    QI-full          DE        0.0 2.980232e-08        26         0     0      -7.775003e+01 0.000001                   True
+        SOS          MA        0.0 2.980232e-08        26         0     0      -1.086887e+02 0.000001                   True
+    QI-full          MA        0.0 2.980232e-08        26         0     0      -1.088574e+02 0.000001                   True
+     QE-SOS          MA        0.0 2.980232e-08        26         0     0      -1.083077e+02 0.000001                   True
+     QE-SOS          DE        0.0 2.980232e-08        26         0     0      -7.775002e+01 0.000001                   True
+  QI-p_only          DE        0.0 2.980232e-08        26         0     0      -7.775002e+01 0.000001                   True
+  QI-p_only          MA        0.0 2.980232e-08        26         0     0      -1.088080e+02 0.000001                   True
+        SOS          DE        6.0 4.172325e-07        25         1     0      -7.774993e+01 0.000010                   True
+  QI-c_only          GA        9.0 9.834766e-07        25         1     0      -1.144979e+01 0.000024                   True
+        SOS          GA        9.0 9.834766e-07        25         1     0      -1.144979e+01 0.000024                   True
+     QE-SOS          GA        9.0 9.834766e-07        25         1     0      -1.144979e+01 0.000024                   True
+    QI-full          GA        9.0 9.834766e-07        24         2     0      -1.144979e+01 0.000024                   True
+  QI-p_only          GA       10.0 1.281500e-06        24         2     0      -1.144979e+01 0.000026                   True
+         GA          MA       29.0 5.164742e-05        21         5     0      -6.798682e+01 0.000981                   True
+         GA          DE       29.0 5.164742e-05        21         5     0      -4.769034e+01 0.000981                   True
+  QI-c_only         PSO       37.0 1.661777e-04        20         6     0      -4.311253e-01 0.002825                   True
+         DE          MA       46.0 5.246103e-04        20         6     0      -3.971033e+01 0.008394                   True
+    QI-full         PSO       49.0 7.454455e-04        19         7     0      -1.306274e-01 0.011182                   True
+  QI-p_only         PSO       50.0 8.353889e-04        19         7     0      -4.583479e-01 0.011695                   True
+     QE-SOS         PSO       51.0 9.347796e-04        19         7     0      -4.583479e-01 0.012152                   True
+  QI-p_only   QI-c_only       55.0 1.443923e-03        23         3     0      -1.069299e-06 0.017327                   True
+        SOS         PSO       56.0 1.604050e-03        18         8     0      -9.796329e-02 0.017645                   True
+  QI-p_only         SOS       57.0 4.530068e-03        22         3     1      -1.862036e-07 0.045301                   True
+     QE-SOS   QI-c_only       88.0 2.535075e-02        21         5     0      -1.825472e-07 0.228157                  False
+    QI-full      QE-SOS       85.0 3.704338e-02        18         7     1      -1.411489e-08 0.228157                  False
+    QI-full   QI-c_only       91.0 3.122070e-02        21         5     0      -2.610943e-08 0.228157                  False
+    QI-full         SOS       81.0 2.831363e-02        20         5     1      -1.512559e-07 0.228157                  False
+     QE-SOS         SOS       98.0 8.265302e-02        20         5     1      -1.371410e-07 0.413265                  False
+  QI-p_only      QE-SOS      106.0 1.284505e-01        15        10     1      -1.854072e-14 0.513802                  False
+        SOS   QI-c_only      158.0 6.709726e-01        13        13     0       4.495244e-17 1.000000                  False
+         GA         PSO      175.0 1.000000e+00        12        14     0       1.106029e-01 1.000000                  False
+    QI-full   QI-p_only      140.0 5.449096e-01        14        11     1      -4.152411e-11 1.000000                  False
+
+WILCOXON ON BENCHMARK RANKS (Holm across 36 pairs)
+algorithm_a algorithm_b  statistic        p_raw  a_better  b_better  ties  median_difference   p_holm  significant_holm_0_05
+        PSO          MA        0.0 2.980232e-08        26         0     0              -2.00 0.000001                   True
+         DE         PSO        0.0 2.980232e-08         0        26     0               2.00 0.000001                   True
+  QI-c_only          MA        0.0 2.980232e-08        26         0     0              -4.00 0.000001                   True
+  QI-c_only          DE        0.0 2.980232e-08        26         0     0              -4.00 0.000001                   True
+    QI-full          DE        0.0 2.980232e-08        26         0     0              -6.00 0.000001                   True
+        SOS          MA        0.0 2.980232e-08        26         0     0              -4.50 0.000001                   True
+    QI-full          MA        0.0 2.980232e-08        26         0     0              -6.25 0.000001                   True
+     QE-SOS          MA        0.0 2.980232e-08        26         0     0              -6.00 0.000001                   True
+     QE-SOS          DE        0.0 2.980232e-08        26         0     0              -5.00 0.000001                   True
+  QI-p_only          DE        0.0 2.980232e-08        26         0     0              -6.00 0.000001                   True
+  QI-p_only          MA        0.0 2.980232e-08        26         0     0              -6.25 0.000001                   True
+        SOS          DE        1.0 5.960464e-08        25         1     0              -3.50 0.000001                   True
+    QI-full          GA        4.0 2.086163e-07        24         2     0              -5.00 0.000005                   True
+  QI-p_only          GA        6.0 4.172325e-07        24         2     0              -4.75 0.000010                   True
+     QE-SOS          GA       15.0 4.082918e-06        25         1     0              -4.00 0.000090                   True
+  QI-c_only          GA       24.0 2.270937e-05        25         1     0              -2.00 0.000477                   True
+        SOS          GA       26.0 3.185868e-05        25         1     0              -2.00 0.000637                   True
+         GA          DE       32.5 9.450316e-05        21         5     0              -2.00 0.001796                   True
+         GA          MA       34.5 1.258850e-04        21         5     0              -2.50 0.002266                   True
+    QI-full         SOS       34.5 5.187416e-04        20         5     1              -2.00 0.008819                   True
+    QI-full   QI-c_only       46.0 5.246103e-04        21         5     0              -2.25 0.008819                   True
+    QI-full         PSO       47.5 6.641448e-04        19         7     0              -4.00 0.009962                   True
+  QI-p_only         SOS       37.0 6.647430e-04        22         3     1              -2.00 0.009962                   True
+  QI-p_only         PSO       49.5 8.353889e-04        19         7     0              -4.00 0.010860                   True
+  QI-p_only   QI-c_only       53.5 1.297981e-03        23         3     0              -2.00 0.015576                   True
+     QE-SOS         PSO       65.5 4.279137e-03        19         7     0              -3.00 0.047071                   True
+     QE-SOS         SOS       63.5 7.116871e-03        20         5     1              -1.50 0.071169                  False
+     QE-SOS   QI-c_only       80.5 1.513213e-02        21         5     0              -2.00 0.136189                  False
+         DE          MA       92.0 3.341016e-02        20         6     0              -1.00 0.267281                  False
+  QI-c_only         PSO      109.5 9.933496e-02        20         6     0              -2.00 0.623203                  False
+         GA         PSO      108.0 8.902901e-02        12        14     0               1.00 0.623203                  False
+  QI-p_only      QE-SOS      118.0 2.185589e-01        15        10     1              -1.00 0.951186                  False
+    QI-full      QE-SOS      115.0 1.902372e-01        18         7     1              -1.00 0.951186                  False
+        SOS         PSO      128.0 2.369501e-01        18         8     0              -2.00 0.951186                  False
+        SOS   QI-c_only      166.0 8.221841e-01        13        13     0               0.00 1.000000                  False
+    QI-full   QI-p_only      151.0 7.475234e-01        14        11     1              -1.00 1.000000                  False
+
+SIGN TEST (Holm across 36 pairs)
+algorithm_a algorithm_b  a_better  b_better  ties        p_raw   p_holm  significant_holm_0_05
+        PSO          MA        26         0     0 2.980232e-08 0.000001                   True
+         DE         PSO         0        26     0 2.980232e-08 0.000001                   True
+  QI-c_only          MA        26         0     0 2.980232e-08 0.000001                   True
+  QI-c_only          DE        26         0     0 2.980232e-08 0.000001                   True
+    QI-full          DE        26         0     0 2.980232e-08 0.000001                   True
+        SOS          MA        26         0     0 2.980232e-08 0.000001                   True
+    QI-full          MA        26         0     0 2.980232e-08 0.000001                   True
+     QE-SOS          MA        26         0     0 2.980232e-08 0.000001                   True
+     QE-SOS          DE        26         0     0 2.980232e-08 0.000001                   True
+  QI-p_only          DE        26         0     0 2.980232e-08 0.000001                   True
+  QI-p_only          MA        26         0     0 2.980232e-08 0.000001                   True
+  QI-c_only          GA        25         1     0 8.046627e-07 0.000020                   True
+        SOS          DE        25         1     0 8.046627e-07 0.000020                   True
+        SOS          GA        25         1     0 8.046627e-07 0.000020                   True
+     QE-SOS          GA        25         1     0 8.046627e-07 0.000020                   True
+  QI-p_only          GA        24         2     0 1.049042e-05 0.000220                   True
+    QI-full          GA        24         2     0 1.049042e-05 0.000220                   True
+  QI-p_only   QI-c_only        23         3     0 8.797646e-05 0.001672                   True
+  QI-p_only         SOS        22         3     1 1.565218e-04 0.002817                   True
+     QE-SOS   QI-c_only        21         5     0 2.493918e-03 0.042397                   True
+         GA          MA        21         5     0 2.493918e-03 0.042397                   True
+         GA          DE        21         5     0 2.493918e-03 0.042397                   True
+    QI-full   QI-c_only        21         5     0 2.493918e-03 0.042397                   True
+     QE-SOS         SOS        20         5     1 4.077315e-03 0.053005                  False
+    QI-full         SOS        20         5     1 4.077315e-03 0.053005                  False
+         DE          MA        20         6     0 9.355307e-03 0.102908                  False
+  QI-c_only         PSO        20         6     0 9.355307e-03 0.102908                  False
+    QI-full      QE-SOS        18         7     1 4.328525e-02 0.260633                  False
+    QI-full         PSO        19         7     0 2.895927e-02 0.260633                  False
+     QE-SOS         PSO        19         7     0 2.895927e-02 0.260633                  False
+  QI-p_only         PSO        19         7     0 2.895927e-02 0.260633                  False
+        SOS         PSO        18         8     0 7.551870e-02 0.377593                  False
+  QI-p_only      QE-SOS        15        10     1 4.243562e-01 1.000000                  False
+         GA         PSO        12        14     0 8.450190e-01 1.000000                  False
+        SOS   QI-c_only        13        13     0 1.000000e+00 1.000000                  False
+    QI-full   QI-p_only        14        11     1 6.900380e-01 1.000000                  False
+
+MANN-WHITNEY U PER BENCHMARK
+Significant Holm across all 936: 659
+Significant Holm within each pair (26): 697
+
+NOTES:
+- Paired Wilcoxon unit is benchmark, not run/seed.
+- Raw objective differences vary in scale between benchmarks.
+- Mann-Whitney uses independent runs within each benchmark.
+- Holm families are explicitly separated.
+- Non-significance does not prove equivalence.
+- The quantum entanglement/no-entanglement comparison is NOT included unless separately supplied.
+
+Saved in: /home/andrea/Documenti/quantum_SOS/QIP_SOS_statistical_9_algorithms
