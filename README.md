@@ -26,9 +26,9 @@ QIP-SOS extends this framework by introducing **analytically derived, quantum-in
 
 The proposed method is motivated by the measurement probabilities of parameterized single-qubit rotations. Rather than executing or simulating quantum circuits, QIP-SOS evaluates the corresponding probability distribution analytically:
 
-\[
-P(1\mid\theta)=\sin^2(\theta)\cos^2\left(\frac{\theta}{2}\right).
-\]
+$$
+P(1 \mid \theta) = \sin^2(\theta)\cos^2\left(\frac{\theta}{2}\right)
+$$
 
 This formulation enables efficient classical sampling without quantum hardware, quantum circuit simulation, or statevector representations.
 
